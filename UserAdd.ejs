@@ -1,0 +1,10 @@
+<h1> Ajouter des utilisateurs</h1>
+<form action="/user/new" method="POST">
+    Nom : 
+    <input type="text" name="Lastname" value="<%= Lastname  %> "> </form><br>
+    Prénom : 
+    <input type="test" name="Firstname" value="<%= Firstname %> ">
+    <input type="hidden" name="iduser" value="<%= iduser %> ">
+    <input type="submit" name="save" value="Sauver"> </br>
+    <input type="submit" value="Retour à la liste" href="/user">
+</form>
