@@ -17,10 +17,15 @@ router.get('/', (req, res) => {
     res.render('register.ejs');
  });
 
+router.get('/user', (req,res) => {
+    console.log('userlistpage');
+    res.render('userlist.js');
+ });
+
  // Import contact controller
  let UserController = require('./controllers/UserController');
 
- router.get('/user' , UserController.userlist);
+ //router.get('/user' , UserController.userlist);
  router.get('/user/add', UserController.userFormAdd);
  router.get('/user/show/:iduser' , UserController.userShow);
  router.post('/user/new', UserController.userNew);
